@@ -16,14 +16,14 @@ function play() {
         guessed_nums.push(user_guess)
         no_of_guesses += 1
         if (user_guess < answer) {
-            msg1.textContent = "Your guess is too low."
+            msg1.textContent = `Please Enter a number between ${user_guess} and 100`
             msg2.textContent = "No. of guesses: " + no_of_guesses
             msg3.textContent = "Guessed numbers are: " + guessed_nums
 
 
         } else if (user_guess > answer) {
 
-            msg1.textContent = "Your guess is too heigh."
+            msg1.textContent = `Please Enter a number between 0 and ${user_guess}`
             msg2.textContent = "No. of guesses: " + no_of_guesses
             msg3.textContent = "Guessed numbers are: " + guessed_nums
 
